@@ -1,0 +1,121 @@
+body {
+    font-family: sans-serif;
+  }
+	input[type=text],
+	input[type=password],input[type=number],input[type=tel]{
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+		box-sizing: border-box;
+		background: rgba(238, 237, 237, 0.89);
+    }
+    input[type=submit]{
+        /* width: 100%; */
+		padding: 8px 10px;
+		margin: 8px 0;
+		display: inline-block;
+		background:rgb(19, 95, 236);
+		/* box-sizing: border-box; */
+		border-radius: 4px;
+		font-size: x-large;
+		font-weight: 700;
+		color: rgb(255, 255, 255);
+    }
+	
+	button {
+		display: inline;
+		background: linear-gradient(to left,rgb(26,255,200),rgb(165,223,40));
+		color: rgb(26, 25, 25);
+		padding: 14px 20px;
+		margin: 8px 0;
+		cursor: pointer;
+		border: 2px solid black;
+		border-radius: 6px;
+		font-size: x-large;
+		font-weight: 700;
+	}
+	#main{
+	position: fixed;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	}
+	
+	.cancelbtn {
+		padding: 7px 10px;
+		background-color: #FF2E00;
+	}
+	.cancelbtn,
+	.signupbtn {
+		float: left;
+		/* width: 70% */
+	}
+	.container {
+		border: 1px;
+		
+	}
+	
+	.flow {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0, 0, 0);
+		background-color: rgba(0, 0, 0, 0.4);
+		padding-top: 60px;
+		
+
+	}
+	
+	.flow-content {
+		background-color: #fefefe;
+		margin: 5% auto 15% auto;
+        border: 1px solid #888;
+		border-radius: 10px;
+		box-shadow: 1px 5px 5px 0px rgba(0, 119, 255, 0.685);
+		padding: 25px;
+		width: 80%;
+    }
+    #branch{
+        width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 2px solid #ccc;
+		box-sizing: border-box;
+	
+	.close{
+		position: absolute;
+		right: 35px;
+		top: 15px;
+		color: #000;
+		font-size: 40px;
+		font-weight: bold;
+	}
+	
+	.close:hover,
+	.close:focus {
+		color: red;
+		cursor: pointer;
+	}
+	
+	.clearfix::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+	
+	@media screen and (max-width: 300px) {
+		.cancelbtn,
+		.signupbtn {
+			width: 100%;
+		}
+	}
+	
