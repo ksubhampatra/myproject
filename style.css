@@ -4,6 +4,7 @@ body {
 	input[type=text],
 	input[type=password],input[type=number],input[type=tel]{
 		width: 100%;
+		height: 30px;
 		padding: 12px 20px;
 		margin: 8px 0;
 		display: inline-block;
@@ -11,31 +12,59 @@ body {
         border-radius: 5px;
 		box-sizing: border-box;
 		background: rgba(238, 237, 237, 0.89);
-    }
+	}
+	/* input[type=submit] {
+		background-color: rgb(19, 95, 236);
+		color: white;
+		padding: 12px 20px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		float: right;
+	  }
+	  */
+	   input[type=submit]:hover {
+		background-color:rgb(14, 73, 184);
+	  }
+
     input[type=submit]{
-        /* width: 100%; */
+		height: auto;
 		padding: 8px 10px;
 		margin: 8px 0;
 		display: inline-block;
 		background:rgb(19, 95, 236);
-		/* box-sizing: border-box; */
 		border-radius: 4px;
-		font-size: x-large;
+		font-size: inherit;
 		font-weight: 700;
 		color: rgb(255, 255, 255);
-    }
+		box-shadow: #ffffff;
+		float : right;
+	}
+
+
+	label{
+		font-size: 16px;
+	}
 	
 	button {
-		display: inline;
-		background: linear-gradient(to left,rgb(26,255,200),rgb(165,223,40));
+		/* display: inline; */
+		background: rgb(165,223,40);
 		color: rgb(26, 25, 25);
 		padding: 14px 20px;
 		margin: 8px 0;
 		cursor: pointer;
-		border: 2px solid black;
+		/* border: 2px solid black; */
 		border-radius: 6px;
-		font-size: x-large;
+		font-size: 18px;
 		font-weight: 700;
+	}
+	select{
+		height: auto;
+		font-size: 15px;
+	}
+	select option{
+		padding: 0px;
+		font-size: 15px;
 	}
 	#main{
 	position: fixed;
@@ -48,11 +77,7 @@ body {
 		padding: 7px 10px;
 		background-color: #FF2E00;
 	}
-	.cancelbtn,
-	.signupbtn {
-		float: left;
-		/* width: 70% */
-	}
+	
 	.container {
 		border: 1px;
 		
@@ -66,22 +91,23 @@ body {
 		top: 0;
 		width: 100%;
 		height: 100%;
-		overflow: auto;
-		background-color: rgb(0, 0, 0);
+		/* overflow: auto; */
+		/* background-color: rgb(0, 0, 0); */
 		background-color: rgba(0, 0, 0, 0.4);
-		padding-top: 60px;
+		padding-top: 0px;
 		
 
 	}
 	
 	.flow-content {
 		background-color: #fefefe;
-		margin: 5% auto 15% auto;
+		margin: 10px auto 5% auto;
         border: 1px solid #888;
 		border-radius: 10px;
-		box-shadow: 1px 5px 5px 0px rgba(0, 119, 255, 0.685);
+		box-shadow: 1px 5px 5px 0px rgba(105, 105, 105, 0.685);
 		padding: 25px;
-		width: 80%;
+		width: 60%;
+		height: 85%;
     }
     #branch{
         width: 100%;
