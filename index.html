@@ -20,36 +20,49 @@
 		<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
 		<form class="flow-content animate" action="#">
 			<div class="container">
-                <label><b>User Name</b></label>
-                <input type="text" placeholder="Enter User Name" name="text" required>
-                
-				<label><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-                
-				<label><b>First Nmae</b></label>
-				<input type="text" placeholder="Enter First Name" name="first_name" required>
-
-                <label><b>last Nmae</b></label>
-				<input type="text" placeholder="Enter last Name" name="last_name" required>
-
-				<label><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="email" required>
-
-                <label><b>Contact</b></label>
-                <input type="tel" placeholder="Enter contact Number" size="10" >
-
-                <label><b>Branch</b></label>
-                <select name="Branch" id="branch">
-                      <option value="Civil">Civil</option>
-                      <option value="Electrical">Electrical</option>
-                      <option value="Electronics">Electronics</option>
-                      <option value="Mechanica">Mechanica</option>
-                  </select>
-
-                  <label><b>College</b></label>
-                <input type="text" placeholder="Enter College Name" >
-                <input style="border: none;" type="submit" class="signupbtn">
-				
+				<table>
+					<tr>
+						<td><label><b>User Name</b></label>
+							<input style="border: none;border-bottom: 1px solid black;" type="text" placeholder="Enter User Name" name="text" required>
+							</td>
+						<td><label><b>Password</b></label>
+							<input style="border: none;border-bottom: 1px solid black;" type="password" placeholder="Enter Password" name="psw" required>
+							</td>
+					</tr>
+					<tr>
+						<td><label><b>First Nmae</b></label>
+							<input style="border: none;border-bottom: 1px solid black;" type="text" placeholder="Enter First Name" name="first_name" required>
+			</td>
+						<td><label><b>last Nmae</b></label>
+							<input style="border: none;border-bottom: 1px solid black;" type="text" placeholder="Enter last Name" name="last_name" required>
+							</td>
+					</tr>
+					<tr>
+						<td><label><b>Email</b></label>
+							<input style="border: none;border-bottom: 1px solid black;" type="text" placeholder="Enter Email" name="email" required>
+			</td>
+						<td><label><b>Contact</b></label>
+							<input style="border: none ;border-bottom: 1px solid black;" type="tel" placeholder="Enter contact Number" size="10" >
+			</td>
+					</tr>
+					<tr>
+						<td><label><b>Branch</b></label>
+							<select style="height: 16px; border: none;border-bottom: 1px solid black; font-size: 16px;" name="Branch" id="branch">
+								  <option value="Civil">Civil</option>
+								  <option value="Electrical">Electrical</option>
+								  <option value="Electronics">Electronics</option>
+								  <option value="Mechanica">Mechanica</option>
+							  </select></td>
+						<td><label><b>College</b></label>
+							<input style="border: none;border-bottom: 1px solid black;" type="text" placeholder="Enter College Name" >
+							</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>                  <button id="sbmit">submit</button>
+						</td>
+					</tr>
+				</table>
 			</div>
 		</form>
 	</div>
