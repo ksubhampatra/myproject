@@ -110,7 +110,7 @@ body {
 		background-image: url('back.jpg');
 		background-repeat: no-repeat;
 		background-attachment: fixed;
-		background-size: 100% 100%;
+		background-size:cover;
 		padding-top: 0px;
 		
 
@@ -159,7 +159,7 @@ body {
 	.flow-content {
 		background-color: #fefefe;
 		margin: 5% 7% 5% 7%;
-        border: 1px solid #888;
+        	border: 1px solid #888;
 		border-radius: 10px;
 		box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.685);
 		padding: 25px;
