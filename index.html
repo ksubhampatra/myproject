@@ -1,82 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NinthSem form</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <span class="align-middle">  
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Sign-up
+              </button>
 
+        </span>     
+  <!-- Modal -->
+  <div class="modal fade"  id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" >Sign-up</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
 
-<body>
-	<div id="main">
-
-		<h2>User form </h2>
-		<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><b>Sign-up</b> </button>
-
-	</div>
-
-	<div id="id01" class="flow">
-		<button onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</button>
-		<form class="flow-content animate" action="#">
-			<div class="container">
-				<table>
-					<tr>
-						<td><label><b>User Name</b></label>
-							<input style="border: none;border-bottom: 1px solid black;" type="text" placeholder="Enter User Name" name="text" required>
-							</td>
-						<td><label><b>Password</b></label>
-							<input style="border: none;border-bottom: 1px solid black;" type="password" placeholder="Enter Password" name="psw" required>
-							</td>
-					</tr>
-					<tr>
-						<td><label><b>First Nmae</b></label>
-							<input style="border: none;border-bottom: 1px solid black;" type="text" placeholder="Enter First Name" name="first_name" required>
-			</td>
-						<td><label><b>Last Nmae</b></label>
-							<input style="border: none;border-bottom: 1px solid black;" type="text" placeholder="Enter last Name" name="last_name" required>
-							</td>
-					</tr>
-					<tr>
-						<td><label><b>Email</b></label>
-							<input style="border: none;border-bottom: 1px solid black;" type="text" placeholder="Enter Email" name="email" required>
-			</td>
-						<td><label><b>Contact</b></label>
-							<input style="border: none ;border-bottom: 1px solid black;" type="tel" placeholder="Enter contact Number" size="10" >
-			</td>
-					</tr>
-					<tr>
-						<td><label><b>Branch</b></label>
-							<select style=" border: none;border-bottom: 1px solid black; font-size: 0.9em;" name="Branch" id="branch">
-								  <option value="Civil">Civil</option>
-								  <option value="Electrical">Electrical</option>
-								  <option value="Electronics">Electronics</option>
-								  <option value="Mechanica">Mechanica</option>
-								  <option value="Chemical">Chemical</option>
-							  </select></td>
-						<td><label><b>College</b></label>
-							<input style="border: none;border-bottom: 1px solid black;" type="text" placeholder="Enter College Name" >
-							</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>                  <button id="sbmit">submit</button>
-						</td>
-					</tr>
-				</table>
-                
-				
-				
-                
-				
-                
-                
-
-			
-			</div>
-		</form>
-	</div>
-
-
-</body>
+            <!-- pop-up form -->
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label >Username</label>
+                      <input type="text" class="form-control"  placeholder="Enter Username">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputPassword4">Password</label>
+                      <input type="password" class="form-control" placeholder="Enter Password">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label >First Name</label>
+                      <input type="text" class="form-control"  placeholder="Enter your First Name">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label >Last Name</label>
+                      <input type="text" class="form-control"placeholder="Enter your Last Name">
+                    </div>
+                  </div>
+                  
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label >Email</label>
+                      <input type="email" class="form-control"  placeholder="Enter yourEmail">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label >Contact</label>
+                      <input type="text" class="form-control"  placeholder="Enter Contact number">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label>Branch</label>
+                      <select  class="form-control">
+                        <!-- <option selected>Choose...</option> -->
+                        <option >Civil</option>
+						<option >Electrical</option>
+						<option >Electronics</option>
+						<option >Mechanica</option>
+						<option >Chemical</option>
+                      </select>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label >College</label>
+                    <input type="text" placeholder="Enter College name" class="form-control" >
+                  </div>
+                </div>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Sign-up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    </body>
 </html>
